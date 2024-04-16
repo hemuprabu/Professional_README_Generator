@@ -34,6 +34,7 @@ function renderLicenseSection(license) {
   if (license) {
     return `
 ## License
+
 This project is licensed under ${renderLicenseLink(license)} \n ${renderLicenseBadge(license)}.
 `;
 } else {
@@ -66,7 +67,7 @@ function generateMarkdown(data) {
 
   Include instructions on how to install any dependencies required for your project. You can mention running npm install to install necessary packages.
 
-  To run the SVG Logo Maker application, follow these steps to install the required dependencies:
+  To run the ${data.title} application, follow these steps to install the required dependencies:
 
   ${data.installation}
 
@@ -85,7 +86,7 @@ function generateMarkdown(data) {
 
   Answer the prompts to provide information about your project, such as the title, description, installation instructions, usage information, etc.
 
-  Once you have answered all the prompts, the application will generate a professional README file based on your inputs.
+  Once you have answered all the prompts, the application will ${data.title} file based on your inputs.
 
   Find the generated README file in the application folder. ${data.usage}  
 
@@ -95,6 +96,7 @@ function generateMarkdown(data) {
 
   
   ## Contributing
+
   Fork the repository on GitHub.
 
   Clone your forked repository to your local machine.
@@ -135,12 +137,12 @@ function generateMarkdown(data) {
 
   ## Author:
 
-  This README Generator project was created by:
+  This ${data.title} project was created by:
 
   - **Your Name**: Hemalatha Prakasam
   - **GitHub**: [GitHub Profile](https://github.com/${data.githubUsername})
 
-  Feel free to connect with me for any inquiries or feedback related to the SVG Logo Maker application. I hope you enjoy using the application and creating custom logos with it.
+  Feel free to connect with me for any inquiries or feedback related to the ${data.title} application. I hope you enjoy using the application.
     
   ## Questions
  
